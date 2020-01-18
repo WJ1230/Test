@@ -3,6 +3,7 @@ import java.sql.*;
 class Oracle_Basic1 {
 	public int a;
 	public int b;
+	private String addInMaster;
     public static void main(String argv[]) {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");  //�X�ʵ{��-�ĥ|��
