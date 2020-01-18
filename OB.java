@@ -1,17 +1,19 @@
 import java.sql.*;
 
 class Oracle_Basic1 {
-	public int a;
-	public int b;
-	private String addInMaster;
+
+
+	private String addInHotfix;
+
+
     public static void main(String argv[]) {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");  //�X�ʵ{��-�ĥ|��
             
-            //Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");     //�X�ʵ{��-�Ĥ@��: JDBC-ODBC����� (Java 8 �}�l,�w���A�䴩)
-            //�� �]�w-����x-�t�κ޲z�u��-��ƨӷ�(ODBC)
+            //Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");     //�X�ʵ{��-�Ĥ@��: JDBC-ODBC�����?(Java 8 �}�l,�w���A�䴩)
+            //�� �]�w-����x-�t�κ޲z�u��-��ƨӷ�?ODBC)
             //-> ��ܨt�θ�ƨӷ��W��->�s�W->��Oracle in XE->���� 
-            //-> [Data Source Name(��ƨӷ��W��)\��J:dsn1] [TNS Service Name\���:XE] [User ID\��J:hr] [OK] -> �T�w
+            //-> [Data Source Name(��ƨӷ��W��)\��J:dsn1] [TNS Service Name\���?XE] [User ID\��J:hr] [OK] -> �T�w
         } catch (java.lang.ClassNotFoundException e) {
             System.err.print("ClassNotFoundException: ");
             System.err.println(e.getMessage());
