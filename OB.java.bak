@@ -1,16 +1,15 @@
 import java.sql.*;
 
 class Oracle_Basic1 {
-	public int a;
-	public int b;
+
     public static void main(String argv[]) {
         try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");  //ï¿½Xï¿½Êµ{ï¿½ï¿½-ï¿½Ä¥|ï¿½ï¿½
+            Class.forName("oracle.jdbc.driver.OracleDriver");  //ÅX°Êµ{¦¡-²Ä¥|Ãþ
             
-            //Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");     //ï¿½Xï¿½Êµ{ï¿½ï¿½-ï¿½Ä¤@ï¿½ï¿½: JDBC-ODBCï¿½ï¿½ï¿½ï¿½ï¿½ (Java 8 ï¿½}ï¿½l,ï¿½wï¿½ï¿½ï¿½Aï¿½ä´©)
-            //ï¿½ï¿½ ï¿½]ï¿½w-ï¿½ï¿½ï¿½ï¿½x-ï¿½tï¿½ÎºÞ²zï¿½uï¿½ï¿½-ï¿½ï¿½Æ¨Ó·ï¿½(ODBC)
-            //-> ï¿½ï¿½Ü¨tï¿½Î¸ï¿½Æ¨Ó·ï¿½ï¿½Wï¿½ï¿½->ï¿½sï¿½W->ï¿½ï¿½Oracle in XE->ï¿½ï¿½ï¿½ï¿½ 
-            //-> [Data Source Name(ï¿½ï¿½Æ¨Ó·ï¿½ï¿½Wï¿½ï¿½)\ï¿½ï¿½J:dsn1] [TNS Service Name\ï¿½ï¿½ï¿½:XE] [User ID\ï¿½ï¿½J:hr] [OK] -> ï¿½Tï¿½w
+            //Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");     //ÅX°Êµ{¦¡-²Ä¤@Ãþ: JDBC-ODBC¾ô±µ¾¹ (Java 8 ¶}©l,¤w¤£¦A¤ä´©)
+            //¦Ü ³]©w-±±¨î¥x-¨t²ÎºÞ²z¤u¨ã-¸ê®Æ¨Ó·½(ODBC)
+            //-> ¿ï¾Ü¨t²Î¸ê®Æ¨Ó·½¦WºÙ->·s¼W->¿ïOracle in XE->§¹¦¨ 
+            //-> [Data Source Name(¸ê®Æ¨Ó·½¦WºÙ)\¿é¤J:dsn1] [TNS Service Name\¿ï¾Ü:XE] [User ID\¿é¤J:hr] [OK] -> ½T©w
         } catch (java.lang.ClassNotFoundException e) {
             System.err.print("ClassNotFoundException: ");
             System.err.println(e.getMessage());
