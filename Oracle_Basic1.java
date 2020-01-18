@@ -31,8 +31,6 @@ class Oracle_Basic1 {
                 System.out.print("\n");
             }
 
-            rs.close();
-            stmt.close();
             con.close();
 
         } catch (SQLException ex) {
