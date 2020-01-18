@@ -1,6 +1,7 @@
 import java.sql.*;
 
 class Oracle_Basic1 {
+	private String addInHotfix;
 
     public static void main(String argv[]) {
         try {
